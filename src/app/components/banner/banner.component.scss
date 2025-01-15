@@ -73,8 +73,23 @@
 
 /* Estilos para telas maiores ou iguais a 768px */
 @media (max-width: 768px) {
-  .text--main-text {
-    display: none;
+  .content {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .text--main-text01 {
+    font-size: 3.8rem;
+    font-weight: 700;
+  }
+
+  .text--main-text02 {
+    font-size: 2.5rem;
+    font-weight: 700;
   }
 
   .text--main-text-mobile {
@@ -98,7 +113,6 @@
 
   .text--badge {
     text-align: center;
-    display: none !important;
   }
 
   app-button {
@@ -106,10 +120,35 @@
   }
 }
 
-/* Estilos para telas maiores ou iguais a 992px */
-@media (min-width: 992px) {
-}
-
 /* Estilos para telas maiores ou iguais a 1200px */
 @media (min-width: 1200px) {
+  .text--main-text01 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  .text--main-text02 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #b2faff;
+  }
+
+  .text--inicial {
+    font-size: 1rem !important;
+  }
+
+  .text--banner-image {
+    width: 400px !important;
+    height: 200px !important;
+
+    img {
+      border-radius: 16px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .text {
+    gap: 25px !important;
+  }
 }
