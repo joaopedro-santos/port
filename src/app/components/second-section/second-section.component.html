@@ -1,0 +1,16 @@
+<main>
+  <section class="second-section">
+    <h1>Últimos Trabalhos</h1>
+
+    <section class="cards">
+      <app-cards
+        *ngFor="let proj of projects"
+        [title]="proj.title"
+        [image]="proj.image"
+        [description]="proj.description"
+        [link]="proj.link"
+      >
+      </app-cards>
+    </section>
+  </section>
+</main>
